@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta charset="UTF-8">
+	  <title>Afíliate - Omnilife</title>
+	  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/8c108ccc3e.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+		<div class="l-form container">
+			<form id="form" class="o-form" method="" action="">
+		    <!-- Progress Bar -->
+		    <div class="c-form--banner"></div>
+		    <ul id="form--progressBar" class="c-form--progressbar">
+		  	  <li class="t-orange-progress"></li>
+		    </ul>
+		    <!-- End of Progress Bar -->
+
+		    <!-- First Step -->
+		    <fieldset class="o-step">
+		  	  <div class="col-md-8">
+			  	  <div class="l-select-sponsor">
+			  	    <h2 class="form--title">Queremos saber de ti</h2>
+			  	    <hr class="form--line">
+			  		  <h4 class="title">¿Cuentas con Patrocinador?</h4>
+			  		  <label>
+			  			  <input id="si" type="radio" class="c-sponsor__btn" name="hasSponsor" checked value="yes">
+			  			  <div class="has-sponsor box">
+			  				  <span>Sí</span>
+			  			  </div>
+			  		  </label>
+
+			  		  <label>
+			  			  <input id="no" type="radio" class="c-sponsor__btn" name="hasSponsor" value="no">
+			  			  <div class="has-no-sponsor box">
+			  				  <span>No</span>
+			  			  </div>
+			  		  </label>
+			  	  </div>
+
+			  		<div class="l-sponsor--container" id="sponsorContainer">
+			  			<!-- Sponsors -->
+				  		<div class="l-sponsor">
+				  			<div class="o-sponsor col-md-12">
+				  				<div class="c-group">
+				  					<input type="text" name="sponsorNumber" id="sponsorNumber" required>
+				  					<span class="highlight"></span>
+				  					<span class="bar"></span>
+				  					<label class="label">Número de Empresario Omnilife (Patrocinador)</label>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<!-- End of Sponsors -->
+
+				  		<!-- Sponsors -->
+				  		<div class="l-sponsor">
+				  			<div class="o-sponsor col-md-12" id="sponsorName">
+				  				<div class="c-group">
+				  					<input type="text" name="sponsorName" id="sponsorName" required>
+				  					<span class="highlight"></span>
+				  					<span class="bar"></span>
+				  					<label class="label">Nombre de Empresario Omnilife (Patrocinador)</label>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<!-- End of Sponsors -->
+			  		</div>
+
+						<!-- Personal Info -->
+			  		<div class="l-personal-info">
+			  			<!-- First Name -->
+			  	  	<div class="col-md-12 col-xs-12 col-ls-12">
+			  	  		<div class="c-group">
+			  	  			<input type="text" name="firstName" required>
+			  	  			<span class="highlight"></span>
+			  	  			<span class="bar"></span>
+			  	  			<label class="label">Nombre</label>
+			  	  		</div>
+			  	  	</div>	
+			  	  	<!-- End of First Name -->
+
+							<!-- Last Name -->
+			  	  	<div class="col-md-6 col-xs-12 col-ls-12">
+			  	  		<div class="c-group">
+			  	  			<input type="text" name="lastName" required>
+			  	  			<span class="highlight"></span>
+			  	  			<span class="bar"></span>
+			  	  			<label class="label">Apellido Paterno</label>
+			  	  		</div>
+			  	  	</div>
+			  	  	<!-- End of Last Name -->
+
+			  	  	<!-- Last Name -->
+			  	  	<div class="col-md-6 col-xs-12 col-ls-12">
+			  	  		<div class="c-group">
+			  	  			<input type="text" name="maternalName" required>
+			  	  			<span class="highlight"></span>
+			  	  			<span class="bar"></span>
+			  	  			<label class="label">Apellido Materno</label>
+			  	  		</div>
+			  	  	</div>
+			  	  	<!-- End of Last Name -->
+			  		</div>
+			  		<!-- End of Names Section -->
+					
+						<!-- Sex & Birthday Section -->
+				  	<div class="l-select-sex">
+				  		<div class="col-md-12 no-padding">
+				  			<div class="col-md-6">
+				  				<div class="o-select-sex">
+				  					<h4>Sexo: </h4>
+
+				  					<!-- Select Female Option -->
+				  					<label class="c-select-sex">
+				  						<input type="radio" name="sexRadio" value="female" checked>
+				  						<span class="outer">
+				  							<span class="inner"></span>
+				  						</span>
+				  						Femenino
+				  					</label>
+				  					<!-- End of Female Option -->
+
+										<!-- Select Male Option -->
+				  					<label class="c-select-sex">
+				  						<input type="radio" name="sexRadio" value="male">
+				  						<span class="outer">
+				  							<span class="inner"></span>
+				  						</span>
+				  						Masculino
+				  					</label>
+				  					<!-- End of Male Option -->
+				  				</div>
+				  			</div>
+
+				  			<div class="col-md-6">
+				  				<label class="c-birthday">Fecha de Nacimiento</label>
+				  				<input type="date" name="birthday" required>
+				  			</div>
+				  		</div>
+				  	</div>
+						<!-- End of Sex & Birthday Section -->
+
+						<!-- Personal Info Section -->
+						<div class="form--section__personalInfo">
+							<!-- Phone -->
+							<div class="col-md-12 col-xs-12 col-ls-12">
+								<div class="c-group">
+									<input type="tel" name="phone" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="label">Número Telefónico</label>
+								</div>
+							</div>
+							<!-- End of Phone -->
+
+							<!-- Email -->
+							<div class="col-md-6 col-xs-12 col-ls-12 u-margin-bottom">
+								<div class="c-group">
+									<input type="email" name="email" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="label">Correo Electrónico</label>
+								</div>
+								<!--label class="v-error">Tu correo debe de contener un @</label-->
+							</div>
+							<!-- End of Email -->
+
+							<!-- Confirm Email -->
+							<div class="col-md-6 col-xs-12 col-ls-12">
+								<div class="c-group">
+									<input type="email" name="confirmEmail" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="label">Confirmar Correo</label>
+								</div>
+							</div>
+							<!-- End of Confirm Email -->		
+						
+						</div>
+						<!-- End of Personal Info -->
+					</div>
+
+					<div class="col-md-4 o-benefits">
+						<img src="img/banner-beneficios.png" alt="" class="img-responsive c-banner-benefits">
+					</div>
+
+					<input type="button" id="btnFirstStep" class="next action-button fullWidthButton t-purple" value="Siguiente">
+		  	</fieldset>
+		  	<!-- End of First Step -->
+
+		  	<!-- Second Step -->
+		  	<fieldset class="o-step">
+		  		<h4 class="c-selectKit--title">Selecciona el kit y compañía de envío</h4>
+		  		<div class="col-md-12">
+	  				<hr class="c-line kit">
+	  			</div>
+		  		<div class="col-md-12 no-padding">
+		  		  <!-- Kit Omnilife -->
+		  			<div class="col-md-4 col-xs-12 col-ls-12 selectKit">
+		  				<figure class="figure c-kit--product t-cyan">
+		  					<img src="img/mochila.png" alt="" class="img-responsive">
+		  				</figure>
+		  				<label class="c-select-kit">
+		  					<input type="radio" name="kit" value="kitNutricional" checked>
+            		<span class="outer">
+              		<span class="inner"></span>
+            		</span>
+            		Kit Maletín Nutricional Web
+		  				</label>
+		  				<h4 class="c-kit__title">Contiene:</h4>
+		  				<div class="c-kit--list">
+		  					<li>&bull; Mochila</li>
+		  					<li>&bull; Omniguía</li>
+		  					<li>&bull; Guía Práctica Omnilife</li>
+		  					<li>&bull; Revista</li>
+		  					<li>&bull; DVD Entrenamiento con Jorge Vergara</li>
+		  					<li>&bull; Bolsa Ecológica</li>
+		  				</div>
+		  			</div>
+		  			<!-- End of Kit Omnilife -->
+     
+            <!-- Kit SeyTú -->
+		  			<div class="col-md-4 col-xs-12 col-ls-12">
+		  				<figure class="c-kit--product t-orange">
+		  					<img src="img/bolso.png" alt="" class="img-responsive">
+		  				</figure>
+		  				<label class="c-select-kit">
+		  					<input type="radio" name="kit" value="kitSeyTu">
+            		<span class="outer">
+              		<span class="inner"></span>
+            		</span>
+            		Kit SeyTú Web
+		  				</label>
+
+		  				<h4 class="c-kit__title"">Contiene:</h4>
+		  				<div class="c-kit--list">
+		  					<li>&bull; Bolso Kit SeyTú</li>
+		  					<li>&bull; Catálogo</li>
+		  					<li>&bull; Estuche Emprende</li>
+		  					<li>&bull; Guía Práctica Omnilife</li>
+		  					<li>&bull; DVD de Entrenamiento con Jorge Vergara</li>
+		  				</div>
+		  			</div>
+
+		  			<div class="col-md-4 col-xs-12 col-ls-12">
+		  				<figure class="c-kit--product t-red--nfuerza">
+		  					<img src="img/mochila.png" alt="" class="img-responsive">
+		  				</figure>
+		  				<label class="c-select-kit">
+		  					<input type="radio" name="kit" value="kitNFuerza">
+            		<span class="outer">
+              		<span class="inner"></span>
+            		</span>
+            		Kit NFuerza
+		  				</label>
+
+		  				<h4 class="c-kit__title">Contiene:</h4>
+		  				<div class="c-kit--list">
+		  					<li>&bull; Kit NFuerza</li>
+		  					<li>&bull; Catálogo</li>
+		  					<li>&bull; Estuche Emprende</li>
+		  					<li>&bull; Guía Práctica Omnilife</li>
+		  					<li>&bull; DVD de Entrenamiento con Jorge Vergara</li>
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<!-- End of Kit SeyTú -->
+
+		  		<div class="col-md-12 c-kit-shipping ">
+		  			<h4 class="text-left ">Selecciona el método de envío de tu Kit de preferencia: </h4>
+		  			<hr class="c-line">
+		  		</div>
+
+					<!-- Company -->
+		  		<div class="col-md-4 l-company text-left">
+		  			<div class="col-md-12 col-xs-12 col-ls-12 selectCompany">
+		  				<label class="c-select-company">
+            		<input type="radio" name="cedis" id="cedis" value="yes">
+            		<span class="outer">
+              		<span class="inner"></span>
+            		</span>
+            		Recoger en CEDIS
+          		</label>
+		  			</div>
+		  			<div class="col-md-12 col-xs-12 col-ls-12">
+		  				<label class="c-select-company">
+            		<input type="radio" name="cedis" id="house" value="no">
+            		<span class="outer">
+              		<span class="inner"></span>
+            		</span>
+            		Envío a Domicilio
+          		</label>
+		  			</div>
+		  		</div>
+		  		<!-- End of Company -->
+
+		  		<div class="col-md-8 l-shipping-info">
+		  			<div class="cedis" id="cedis">
+		  				<!-- State -->
+							<div class="col-md-4 col-xs-12">
+								<select name="selectState" id="state" class="c-state">
+									<option value="" disabled selected>Selecciona tu estado:</option>
+									<option value="1">Aguascalientes</option>
+									<option value="2">Baja California</option>
+									<option value="3">Baja California Sur</option>
+								</select>
+							</div>
+							<!-- End of State -->
+
+							<!-- Select City -->
+							<div class="col-md-4 col-ls-12">
+								<select name="secretQuestion" id="city" class="c-city">
+									<option value="" disabled selected>Selecciona tu ciudad:</option>
+									<option value="1">La Paz</option>
+									<option value="2">Cabo San Lucas</option>
+									<option value="3">Loreto</option>
+								</select>
+							</div>
+							<!-- End of City -->
+
+							<div class="col-md-4 u-cedis--container">
+								<input type="button" name="showCEDIS" id="showCEDIS" class="btnCedis action-button t-purple" value="Mostrar CEDIS">
+							</div>
+			  		</div>
+
+						<div class="l-shopping shopping" id="shopping">
+							<!-- Address Shopping -->
+							<!-- Address -->
+							<div class="col-md-12 col-xs-12 col-ls-12">
+								<div class="c-group">
+									<input type="text" name="address" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="label">Dirección (nombre de la calle y número)</label>
+								</div>
+							</div>
+							<!-- End of Address -->
+							
+							<!-- Address -->
+							<div class="col-md-12 col-xs-12 col-ls-12">
+								<div class="c-group">
+									<input type="text" name="addressLocation" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="label">¿Entre qué calles cruza?</label>
+								</div>
+							</div>
+							<!-- End of Address -->
+
+							<!-- Location -->
+							<div class="col-md-12 col-xs-12 col-ls-12 no-padding">
+								<div class="col-md-6 col-xs-12 col-ls-12">
+									<div class="c-group">      
+	          				<input type="text" name="colony" required>
+	          				<span class="highlight"></span>
+	          				<span class="bar"></span>
+	          				<label class="label">Colonia</label>
+	        				</div>
+								</div>
+
+								<div class="col-md-6 col-xs-12 col-ls-12">
+									<div class="c-group">      
+	          				<input type="text" name="postalCode" required>
+	          				<span class="highlight"></span>
+	          				<span class="bar"></span>
+	          				<label class="label">Código Postal</label>
+	        				</div>
+								</div>
+							</div>
+							<!-- End of Location -->
+
+							<!-- City & State -->
+							<div class="col-md-12 col-xs-12 col-ls-12 no-padding u-margin-bottom">
+								<div class="col-md-6 col-xs-12 col-ls-12">
+			          	<div class="c-group">      
+			          		<input type="text" name="state" required>
+			          		<span class="highlight"></span>
+			          		<span class="bar"></span>
+			          		<label class="label">Estado</label>
+			        		</div>
+	        			</div> 
+
+	        			<div class="col-md-6 col-xs-12 col-ls-12">
+			          	<div class="c-group">      
+			          		<input type="text" name="city" required>
+			          		<span class="highlight"></span>
+			          		<span class="bar"></span>
+			          		<label class="label">Ciudad</label>
+			        		</div>
+	        			</div>  
+							</div>
+							<!-- End of City & State -->
+						</div>
+
+		  		</div>
+
+					<!-- List of CEDIS -->
+		  		<div class="col-md-12 c-cedis--list" id="cedisList">
+		  			<h4 class="c-cedis--list__title">Selecciona el CEDIS que te quede más cerca:</h4>
+		  			<div class="col-md-12 col-xs-12 col-ls-12 text-left is-odd">
+		  				<label class="c-select-cedis">
+            		<input type="radio" name="company" value="dhl">
+            		<span class="outer">
+              		<span class="inner"></span>
+            		</span>
+            		RLIDERES 3D - DAVID A. SIQUEIROS 489 L-6 LAS GLORIAS
+          		</label>
+			  		</div>
+
+			  		<div class="col-md-12 col-xs-12 col-ls-12 text-left">
+			  			<label class="c-select-cedis">
+            		<input type="radio" name="company" value="estafeta">
+            		<span class="outer">
+              		<span class="inner"></span>
+            		</span>
+            		"REALIZANDO SUEOS" - REVOLUCION 160 EL PITILLAL
+          		</label>
+			  		</div>	
+
+			  		<div class="col-md-12 col-xs-12 col-ls-12 selectCompany text-left is-odd">
+		  				<label class="c-select-cedis">
+            		<input type="radio" name="company" value="dhl">
+            		<span class="outer">
+              		<span class="inner"></span>
+            		</span>
+            		RLIDERES 3D - DAVID A. SIQUEIROS 489 L-6 LAS GLORIAS
+          		</label>
+			  		</div>
+
+			  		<div class="col-md-12 col-xs-12 col-ls-12 text-left">
+			  			<label class="c-select-cedis">
+            		<input type="radio" name="company" value="estafeta">
+            		<span class="outer">
+              		<span class="inner"></span>
+            		</span>
+            		"REALIZANDO SUEOS" - REVOLUCION 160 EL PITILLAL
+          		</label>
+			  		</div>	
+
+			  		<div class="col-md-12 col-xs-12 col-ls-12 selectCompany text-left is-odd">
+		  				<label class="c-select-cedis">
+            		<input type="radio" name="company" value="dhl">
+            		<span class="outer">
+              		<span class="inner"></span>
+            		</span>
+            		RLIDERES 3D - DAVID A. SIQUEIROS 489 L-6 LAS GLORIAS
+          		</label>
+			  		</div>
+
+			  		<div class="col-md-12 col-xs-12 col-ls-12 text-left">
+			  			<label class="c-select-cedis">
+            		<input type="radio" name="company" value="estafeta">
+            		<span class="outer">
+              		<span class="inner"></span>
+            		</span>
+            		"REALIZANDO SUEOS" - REVOLUCION 160 EL PITILLAL
+          		</label>
+			  		</div>	
+		  		</div>
+		  		<!-- End of List -->
+
+		  		<input type="button" id="btnPreviousFirstStep" name="previous" class="c-btn btnPrevious previous action-button t-cyan" value="Regresar" />
+					<input type="button" id="btnSecondStep" name="next" class="c-btn btnNext next action-button t-purple" value="Siguiente" />
+		  	</fieldset>
+		 	 	<!-- End of Second Step -->
+
+		  	<!-- Third Step -->
+		  	<fieldset class="o-step">
+		  		<div class="l-payment">
+		  			<h4 class="o-payment__title">Selecciona tu mejor opción de pago</h4>
+		  			<div class="col-md-12">
+		  				<hr class="form--line">
+		  			</div>
+		  			<p class="o-payment__subtitle">Finaliza tu proceso de afiliación seleccionando tu forma de pago:</p>
+		  			<div class="col-md-4 col-md-offset-2">
+	          	<label class="c-select-payment">
+	            	<input type="radio" name="kit" value="debit" checked>
+	            	<span class="outer">
+	              	<span class="inner"></span>
+	            	</span>
+	            	Tarjetas de Débito
+	          	</label>
+	        	</div>
+	        	<div class="col-md-4">
+	          	<label class="c-select-payment">
+	            	<input type="radio" name="kit" value="credit">
+	            	<span class="outer">
+	              	<span class="inner"></span>
+	            	</span>
+	            	Tarjetas de Crédito
+	          	</label>
+	        	</div>
+	        	<div class="col-md-12">
+	          	<img src="img/bancos.png" alt="" class="img-responsive">
+	        	</div>
+		  		</div>
+		  		<input type="button" id="btnPreviousSecondStep" name="previous" class="c-btn btnPrevious previous action-button t-cyan" value="Regresar" />
+			  	<input type="button" id="btnPayment" name="next" class="c-btn btnNext next action-button t-purple" value="Confirmar Pago">
+		  	</fieldset>
+		  	<!-- End of Third Step -->
+
+		  	<!-- Last Step -->
+		  	<fieldset class="o-step">
+		  		<div class="l-business">
+		  			<h4 class="o-business__title">Conoce más sobre tu negocio</h4>
+		  			<hr class="c-line">
+		  			<div class="col-md-12 col-xs-12">
+		  				<div class="o-business--products">
+		  					<img src="img/productos_header.png" alt="" class="img-responsive">
+		  				</div>
+		  			</div>
+
+		  			<div class="col-md-4 col-xs-12">
+		  				<div class="o-business--item t-seaBlue">
+		  					<a href="http://omnilife.com/shopping/">
+		  						<img src="img/banner_1.png" alt="" class="img-responsive">
+		  						<span>Crea tu contraseña y compra</span>
+		  					</a>
+		  				</div>
+		  			</div>
+		  			<div class="col-md-4 col-xs-12">
+		  				<div class="o-business--item t-pink">
+		  					<a href="https://www.omnilife.com/login/?ref=zona-de-empresarios" target="_blank">	
+		  						<img src="img/banner_2.png" alt="" class="img-responsive">
+		  						<span>Ingresa a tu zona de empresario</span>
+		  					</a>
+		  				</div>
+		  			</div>
+		  			<div class="col-md-4 col-xs-12">
+		  				<div class="o-business--item t-blue">
+		  					<a href="http://omnilife.com/cresiendo" target="_blank">
+		  						<img src="img/banner_3.png" alt="" class="img-responsive">
+		  						<span>Conoce CreSiendo</span>
+		  					</a>
+		  				</div>
+		  			</div>
+						<div class="col-md-4 col-xs-12">
+		  				<div class="o-business--item t-rose">
+		  					<a href="https://www.facebook.com/omnilifeoficial" target="_blank">
+		  						<img src="img/fb.png" alt="" class="img-responsive i-social">
+		  					</a>
+		  					<a href="https://instagram.com/omnilifeoficial/" target="_blank">
+		  						<img src="img/in.png" alt="" class="img-responsive i-social">
+		  					</a>
+		  					<a href="https://twitter.com/Omnilife" target="_blank">
+		  						<img src="img/tw.png" alt="" class="img-responsive i-social">
+		  					</a>
+		  					<a href="https://www.youtube.com/user/omnilifeoficial" target="_blank">
+		  						<img src="img/yt.png" alt="" class="img-responsive i-social">
+		  					</a>
+		  					<span>Síguenos en Redes Sociales</span>
+		  				</div>
+		  			</div>	
+		  			<div class="col-md-4 col-xs-12">
+		  				<div class="o-business--item t-yellow">
+		  					<a href="https://www.facebook.com/groups/EmpresarioOmnilife/" target="_blank">	
+		  						<img src="img/banner_5.png" alt="" class="img-responsive facebook-group">
+		  						<span>Únete al grupo de Empresarios</span>
+		  					</a>
+		  				</div>
+		  			</div>
+		  			<div class="col-md-4 col-xs-12">
+		  				<div class="o-business--item t-green">
+		  					<a href="https://www.omnilife.com/">
+		  						<img src="img/banner_6.png" alt="" class="img-responsive">
+		  						<span>Visita Omnilife.com</span>
+		  					</a>
+		  				</div>
+		  			</div>	  			
+		  		</div>
+		  	</fieldset>
+		  <!-- End of Last Step -->
+		  </form>
+		</div>
+		
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	  <script src="js/jquery.easing.min.js" type="text/javascript"></script>
+		<script src="js/main.js"></script>
+  </body>
+</html>
